@@ -44,8 +44,14 @@
     <Compile Include="CompositePattern.Demo\CompositeNode.cs" />
     <Compile Include="CompositePattern.Demo\Node.cs" />
     <Compile Include="CompositePattern.Demo\NodoFiglio.cs" />
+    <Compile Include="InterpreterPattern.Demo\Context.cs" />
+    <Compile Include="InterpreterPattern.Demo\IExpression.cs" />
+    <Compile Include="InterpreterPattern.Demo\Interpreter.cs" />
+    <Compile Include="InterpreterPattern.Demo\LowerCaseExpression.cs" />
+    <Compile Include="InterpreterPattern.Demo\UpperCaseExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

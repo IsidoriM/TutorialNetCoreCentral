@@ -1,4 +1,5 @@
 ﻿using PatternDemo.CompositePattern.Demo;
+using PatternDemo.InterpreterPattern.Demo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,25 +20,37 @@ namespace PatternDemo
             node1.Add(leaf12);
 
             var node2 = new CompositeNode("node2", root);
-            var leaf21 = new NodoFiglio("leaf21", root);
+            var leaf1 = new NodoFiglio("leaf1", root);
 
-            root.Add(leaf21);
+            root.Add(leaf1);
             root.Add(node1);
             root.Add(node2);
 
             Console.WriteLine("Root ======");
-            root.StampaPadre(node1);
-            root.StampaFiglio(node1);
+            root.PrintParent();
+            root.PrintChildren();
 
             Console.WriteLine("leaf1 ======");
-            leaf21.StampaPadre(node1);
+            leaf1.PrintParent();
 
             Console.WriteLine("node1 ======");
-            node1.StampaPadre(node1);
-            node1.StampaFiglio(node1);
+            node1.PrintParent();
+            node1.PrintChildren();
 
+            Console.WriteLine("leaf11 ======");
+            leaf11.PrintParent();
             
+
+            Console.WriteLine("Provide a word with expression");
+            var word = "Prova-Test";
+
+            var value = word.Substring(0, word.IndexOf("-"));
+            var expressions = word.Substring(word.IndexOf("-"));
+
+            var interpreter = new Interpreter();
+            interpreter.Interpret(new Context(expressions, value));
         }
     }
-
 }
+
+

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PatternDemo.CompositePattern.Demo
 {
-    internal  class CompositeNode : Node 
+    internal class CompositeNode : Node
     {
         private List<Node> children = new List<Node>();
         private readonly string name;
@@ -13,11 +13,12 @@ namespace PatternDemo.CompositePattern.Demo
 
         public override string Name => name;
 
-        public CompositeNode(string nome, Node parentNode = null)
+        public CompositeNode(string name, Node parentNode = null)
         {
-            this.name = nome;
+            this.name = name;
             this.parentNode = parentNode;
         }
+
         public override void Add(Node node)
         {
             children.Add(node);
@@ -28,7 +29,7 @@ namespace PatternDemo.CompositePattern.Demo
             children.Remove(node);
         }
 
-        public override void StampaFiglio(Node node)
+        public override void PrintParent()
         {
             if (parentNode != null)
                 Console.WriteLine($"Parent: {parentNode.Name}");
@@ -36,16 +37,10 @@ namespace PatternDemo.CompositePattern.Demo
                 Console.WriteLine("Root node");
         }
 
-        public override void StampaPadre(Node node)
+        public override void PrintChildren()
         {
             Console.WriteLine
-            ($"Children: {string.Join(",", children.Select(c => c.Name))}");
+                ($"Children: {string.Join(",", children.Select(c => c.Name))}");
         }
-
-
-
-
-
-
     }
 }

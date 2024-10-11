@@ -19,7 +19,7 @@ namespace PatternDemo.CompositePattern.Demo
             this.parentNode = parentNode;
         }
 
-        public override void StampaPadre(Node node)
+        public override void PrintParent()
         {
             Console.WriteLine($"Parent: {parentNode.Name}");
         }
