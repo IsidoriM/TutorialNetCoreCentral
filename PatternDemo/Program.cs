@@ -1,5 +1,6 @@
 ﻿using PatternDemo.CompositePattern.Demo;
 using PatternDemo.InterpreterPattern.Demo;
+using PatternDemo.VisitorPattern.Demo;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,10 @@ namespace PatternDemo
     {
         static void Main(string[] args)
         {
+
+            Innesco innesco = new Innesco();
+            innesco.VisitorStart();
+
             var root = new CompositeNode("Root");
 
             var node1 = new CompositeNode("node1", root);

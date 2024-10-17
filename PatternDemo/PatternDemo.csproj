@@ -51,6 +51,14 @@
     <Compile Include="InterpreterPattern.Demo\UpperCaseExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisitorPattern.Demo\EmailVisitor.cs" />
+    <Compile Include="VisitorPattern.Demo\Innesco.cs" />
+    <Compile Include="VisitorPattern.Demo\INotificationSender.cs" />
+    <Compile Include="VisitorPattern.Demo\InvoiceNotificationSender.cs" />
+    <Compile Include="VisitorPattern.Demo\IVisitor.cs" />
+    <Compile Include="VisitorPattern.Demo\MarketingNotificationSender.cs" />
+    <Compile Include="VisitorPattern.Demo\TextVisitor.cs" />
+    <Compile Include="VisitorPattern.Demo\WebsocketVisitor.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
