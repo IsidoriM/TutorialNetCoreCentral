@@ -1,5 +1,7 @@
 ﻿using PatternDemo.CompositePattern.Demo;
 using PatternDemo.InterpreterPattern.Demo;
+using PatternDemo.TemplateMethodPattern.Demo.SOLID;
+using PatternDemo.TemplateMethodPattern.Demo.TemplateMethod;
 using PatternDemo.VisitorPattern.Demo;
 using System;
 using System.Collections.Generic;
@@ -13,8 +15,14 @@ namespace PatternDemo
         static void Main(string[] args)
         {
 
-            Innesco innesco = new Innesco();
-            innesco.VisitorStart();
+            //Innesco innesco = new Innesco();
+            //innesco.VisitorStart();
+
+            InnescoTemplate template = new InnescoTemplate();
+            template.StartInnesco();
+
+            InnescoSolido innescoSolido = new InnescoSolido();
+            innescoSolido.StartInnesco();
 
             var root = new CompositeNode("Root");
 

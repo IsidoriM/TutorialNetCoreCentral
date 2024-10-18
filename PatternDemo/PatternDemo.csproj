@@ -51,6 +51,16 @@
     <Compile Include="InterpreterPattern.Demo\UpperCaseExpression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.SOLID\Cart.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.SOLID\IItemValidator.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.SOLID\InnescoSolido.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.SOLID\IPaymentExecutor.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.SOLID\ItemValidator.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.SOLID\PaymentExecutor.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.TemplateMethod\Cart.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.TemplateMethod\EmailCart.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.TemplateMethod\InnescoTemplate.cs" />
+    <Compile Include="TemplateMethodPattern.Demo.TemplateMethod\TextCart.cs" />
     <Compile Include="VisitorPattern.Demo\EmailVisitor.cs" />
     <Compile Include="VisitorPattern.Demo\Innesco.cs" />
     <Compile Include="VisitorPattern.Demo\INotificationSender.cs" />
