@@ -1,5 +1,6 @@
 ﻿using PatternDemo.CompositePattern.Demo;
 using PatternDemo.InterpreterPattern.Demo;
+using PatternDemo.StrategyPattern.Demo;
 using PatternDemo.TemplateMethodPattern.Demo.SOLID;
 using PatternDemo.TemplateMethodPattern.Demo.TemplateMethod;
 using PatternDemo.VisitorPattern.Demo;
@@ -14,9 +15,10 @@ namespace PatternDemo
     {
         static void Main(string[] args)
         {
-
-            //Innesco innesco = new Innesco();
-            //innesco.VisitorStart();
+            InnescoStrategy InnescoStr = new InnescoStrategy();
+            InnescoStr.Innesco();
+               //Innesco innesco = new Innesco();
+               //innesco.VisitorStart();
 
             InnescoTemplate template = new InnescoTemplate();
             template.StartInnesco();
