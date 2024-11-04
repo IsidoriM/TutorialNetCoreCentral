@@ -1,5 +1,6 @@
 ﻿using PatternDemo.CompositePattern.Demo;
 using PatternDemo.InterpreterPattern.Demo;
+using PatternDemo.MediatorPattern.Demo;
 using PatternDemo.StrategyPattern.Demo;
 using PatternDemo.TemplateMethodPattern.Demo.SOLID;
 using PatternDemo.TemplateMethodPattern.Demo.TemplateMethod;
@@ -15,6 +16,9 @@ namespace PatternDemo
     {
         static void Main(string[] args)
         {
+            InnescoMediator innescomedia = new InnescoMediator();
+            innescomedia.Partenza();
+
             InnescoStrategy InnescoStr = new InnescoStrategy();
             InnescoStr.Innesco();
                //Innesco innesco = new Innesco();
